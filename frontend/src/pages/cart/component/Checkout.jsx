@@ -115,12 +115,12 @@ export const Checkout = ({ setcheckoutDisplay }) => {
                     name="card"
                     id="card"
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:value-gray-400 dark:text-white"
-                    value="4215625462597845"
-                    disabled
+                    // value="4215625462597845"
+                    // disabled
                     required=""
                   />
                 </div>
-                <div className="">
+                {/* <div className="">
                   <label
                     htmlFor="code"
                     className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
@@ -145,7 +145,37 @@ export const Checkout = ({ setcheckoutDisplay }) => {
                     disabled
                     required=""
                   />
+                </div> */}
+                <div className="">
+                  <label
+                    htmlFor="code"
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  >
+                    Expiry Date:
+                  </label>
+                  <div className="flex items-center">
+                    <input
+                      type="number"
+                      name="month"
+                      id="month"
+                      className="w-20 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:value-gray-400 dark:text-white"
+                      // value="03"
+                      // disabled
+                      required=""
+                    />
+                    <input
+                      type="number"
+                      name="year"
+                      id="year"
+                      className="w-20 ml-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:value-gray-400 dark:text-white"
+                      // value="27"
+                      // disabled
+                      required=""
+                    />
+                  </div>
                 </div>
+
+
                 <div>
                   <label
                     htmlFor="code"
@@ -158,8 +188,8 @@ export const Checkout = ({ setcheckoutDisplay }) => {
                     name="code"
                     id="code"
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:value-gray-400 dark:text-white"
-                    value="523"
-                    disabled
+                    // value="523"
+                    // disabled
                     required=""
                   />
                 </div>
